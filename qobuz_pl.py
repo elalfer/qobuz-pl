@@ -2,6 +2,7 @@ import logging
 import os
 import optparse
 import configparser
+import getpass
 
 from qobuz_dl.core import QobuzDL
 from qobuz_dl.utils import get_url_info
