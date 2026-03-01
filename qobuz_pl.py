@@ -109,7 +109,7 @@ if __name__ == "__main__":
         # Securely read password from console
         password = getpass.getpass("Enter Qobuz password: ")
 
-    qobuz = QobuzDL()
+    qobuz = QobuzDL(directory='.')
     qobuz.get_tokens() # get 'app_id' and 'secrets' attrs
     qobuz.initialize_client(email, password, qobuz.app_id, qobuz.secrets)
 
